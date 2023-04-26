@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trans 연습4</title>
+    <style>
+
+        .box1{background-color: lightcoral; width: 45vw; height: 45vw; transform: translateY(0); transition: 1s ease-in-out;}
+        .box2{background-color: lightskyblue; width: 90vw; height: 10vw;  transform: translateY(0); transition: 1s linear;}
+
+
+
+        input[type=checkbox]:checked ~ .box1{
+            transform: translateY(-100%); opacity: 0;
+            
+        }
+        input[type=checkbox]:checked ~ .box2{
+            transform: translateY(-45vw);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>trans 연습 4</h1>
+    <input type="checkbox" name="check" id="check">
+    <label for="check">체크 박스가 체크되면 박스가 위로 올라와 사라집니다</label>
+
+        <div class="box1">
+            <h2>:checked</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus placeat perspiciatis ad ipsa, animi quam corrupti nam asperiores incidunt consequuntur commodi iste voluptate officia consequatur sint repellat provident facere veniam?</p>
+        </div>
+        <div class="box2">block</div>
+        
+    </div>
